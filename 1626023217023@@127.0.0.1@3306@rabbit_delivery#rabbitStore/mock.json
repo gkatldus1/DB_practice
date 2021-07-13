@@ -1,0 +1,45 @@
+{
+    "schema": "rabbit_delivery",
+    "table": "rabbitStore",
+    "mockStartIndex": "auto",
+    "mockCount": 100,
+    "mockValueReference": "http://mockjs.com/examples.html#DPD",
+    "mock": {
+        "id": {
+            "type": "int",
+            "value": "$mockIndex"
+        },
+        "name": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "location": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "telephone": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "rating": {
+            "type": "int",
+            "value": "@integer(1,5)"
+        },
+        "open_time": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "close_time": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "stars": {
+            "type": "int",
+            "value": "@integer(1,1024)"
+        },
+        "thumbnail": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        }
+    }
+}

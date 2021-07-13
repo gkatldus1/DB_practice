@@ -1,0 +1,37 @@
+{
+    "schema": "rabbit_delivery",
+    "table": "rabbitUser",
+    "mockStartIndex": "auto",
+    "mockCount": 100,
+    "mockValueReference": "http://mockjs.com/examples.html#DPD",
+    "mock": {
+        "id": {
+            "type": "varchar",
+            "value": "$mockIndex"
+        },
+        "password": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "nickname": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "point": {
+            "type": "int",
+            "value": "@integer(1,1024)"
+        },
+        "address": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "telephone": {
+            "type": "varchar",
+            "value": "@string('lower',5)"
+        },
+        "rank1": {
+            "type": "int",
+            "value": "@integer(1,1024)"
+        }
+    }
+}
